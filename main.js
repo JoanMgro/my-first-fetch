@@ -1,9 +1,9 @@
+import fetchData from './fetchData.js';
 
-import fetch from 'node-fetch';
+fetchData('https://api.escuelajs.co/api/v1/products');
 
-let prom = fetch('https://catfact.ninja/fact');
 
-prom.then(response => response.json())
-.then(resultado => console.log(resultado.fact))
-.catch(e => console.error(e));
+
+
+
 
